@@ -1,0 +1,16 @@
+# Archivo de localización en español para Sparky Picom.
+# Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/23
+# Bajo la licencia GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nombre"
+LOCAL2="Descripción"
+LOCAL3="Salir"
+LOCAL4="Administrador de Picom"
+LOCAL5="Configuración del administrador de Picom Composite. \n\Detener cualquier otro administrador de composición que esté ejecutándose, antes que inicie Picom. \n\nPor favor, elija una opción:"
+LOCAL6="Iniciar Picom"
+LOCAL7="Detener Picom"
+LOCAL8="Cargar el archivo de configuración de ejemplo"
+LOCAL9="Editar el archivo de configuración de Picom"
+### .desktop file to be translated too
+# Name[es_AR]=Administrador de Picom
+# Comment[es_AR]=Lanza, detiene o edita el administrador de Picom Composite

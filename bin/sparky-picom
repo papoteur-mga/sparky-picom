@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# Created by Paweł "pavroo" Pijanowski 2013/10/12
+# forked from 'sparky-compton' package
+# Copyright 2013-2020 under the GNU GPL2 License
+# This script requires yad to run
+# Last update 2020/04/05 by pavroo
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-picom"
+if [ "`cat /etc/default/locale | grep de`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep el`" != "" ]; then
+. $DEFLOCDIR/el
+elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep hu`" != "" ]; then
+. $DEFLOCDIR/hu
+elif [ "`cat /etc/default/locale | grep id_ID`" != "" ]; then
+. $DEFLOCDIR/id_ID
+elif [ "`cat /etc/default/locale | grep it`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep pl`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep ru`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`cat /etc/default/locale | grep sv_SE`" != "" ]; then
+. $DEFLOCDIR/se
+else
+. $DEFLOCDIR/en
+fi
+
+DIALOG="yad --window-icon=preferences-desktop-theme --width=500 --height=320 --center"
+TITLE="--always-print-result --dialog-sep --image=preferences-desktop-theme --title="
+TEXT="--text="
+MENU="--list --column=$LOCAL1 --column=$LOCAL2"
+OKEXIT="--button=Ok:0 --button=$LOCAL3:1"
+TITLETEXT="$LOCAL4"
+if [ -f /usr/bin/sparky-editor ]; then
+	SPARKYEDITOR="sparky-editor"
+else
+	SPARKYEDITOR="gnome-text-editor"
+fi
+
+mainmenu () {
+CHOICES=`$DIALOG $TITLE"$TITLETEXT" $MENU $OKEXIT $TEXT"$LOCAL5:" \
+Start "$LOCAL6" \
+Stop "$LOCAL7" \
+Load "$LOCAL8" \
+Edit "$LOCAL9"`
+
+if [ "$?" = "0" ]; then
+	CHOICE=`echo $CHOICES | cut -d "|" -f 1`
+else
+	exit 0
+fi
+
+if [ "$CHOICE" = "Start" ]; then
+	picom &
+	mainmenu
+elif [ "$CHOICE" = "Stop" ]; then
+	killall -9 picom &
+	mainmenu
+elif [ "$CHOICE" = "Load" ]; then
+	if [ -f $HOME/.config/picom/picom.conf ]; then
+		cp $HOME/.config/picom/picom.conf $HOME/.config/picom/picom-backup-$(date +"%m_%d_%Y").conf
+		rm -f $HOME/.config/picom/picom.conf
+	fi
+
+	if [ ! -d $HOME/.config/picom ]; then
+		mkdir $HOME/.config/picom
+	fi
+
+	cp -f /opt/sparky/picom.conf $HOME/.config/picom/picom.conf
+	mainmenu
+elif [ "$CHOICE" = "Edit" ]; then
+	$SPARKYEDITOR $HOME/.config/picom/picom.conf
+	mainmenu
+else
+	exit 0
+fi
+}
+
+mainmenu

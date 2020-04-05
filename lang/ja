@@ -1,0 +1,18 @@
+# Japanese localization file for Sparky Picom.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Under the GNU GPL v2
+# Last update 2020/04/05 by pavroo
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+LOCAL1="名前"
+LOCAL2="説明"
+LOCAL3="終了"
+LOCAL4="Picom マネージャー"
+LOCAL5="Picom コンポジットマネージャーの設定です。 \n\nすでに異なるコンポジットマネージャーが動作している場合は Picom を開始する前に停止して下さい。\n\nオプションを選んで下さい"
+LOCAL6="Picom の開始"
+LOCAL7="Picom の停止"
+LOCAL8="サンプル設定ファイルの読み込み"
+LOCAL9="Picom 設定ファイルの編集"
+LOCAL10="Picomの設定"
+### .desktop file to be translated too
+# Name[ja_JP]=Picom マネージャー
+# Comment[ja_JP]=Picom コンポジットマネージャーの起動・停止・編集

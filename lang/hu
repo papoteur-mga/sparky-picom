@@ -1,0 +1,17 @@
+# Hungarian localization file for Sparky Picom. (Translated by Nemomen)
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Under the GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Név"
+LOCAL2="Leírás"
+LOCAL3="Kilépés"
+LOCAL4="Picom Manager"
+LOCAL5="Picom Composite Manager beállításai. \n\Állítson le más kompozit kezelőt, amennyiben futna, mielőtt elindítja a Picomt. \n\nKérjük, válasszon opciót!"
+LOCAL6="Indítsa a Picomt!"
+LOCAL7="Állítsa le a Picomt!"
+LOCAL8="Töltsön be minta konfigurációs fájlt!"
+LOCAL9="Szerkessze a Picom konfigurációs fájlt!"
+LOCAL10="Picom Konfiguráció"
+### .desktop file to be translated too
+# Name[en_US]=Picom Manager
+# Comment[en_US]=Launch, stop or edit Picom Composite Manager

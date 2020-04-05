@@ -1,0 +1,17 @@
+﻿# Fichier de localisation française de Sparky Picom.
+# Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
+# Sous licence GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nom"
+LOCAL2="Description"
+LOCAL3="Quitter"
+LOCAL4="Gestionnaire de Picom"
+LOCAL5="Configuration du gestionnaire de Picom Composite . \n\n Arrêtez tout autre gestionnaire de composition en fonctionnement avant de démarrer Picom. \n\nChoissisez une option s'il vous plaît:"
+LOCAL6="Démarrer Picom"
+LOCAL7="Arrêter Picom"
+LOCAL8="Charger un fichier exemple de configuration"
+LOCAL9="Éditer le fichier de configuration de Picom"
+LOCAL10="Paramétrage de Picom"
+### .desktop file to be translated too
+# Name[en_US]=Gestionnaire Picom
+# Comment[en_US]=Lance, arrête ou édite le gestionnaire Picom Composite

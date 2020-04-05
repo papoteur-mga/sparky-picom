@@ -1,0 +1,19 @@
+# Indonesian localization file for Sparky Picom.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Under the GNU GPL v2
+# Translated to Indonesian by les kompie
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nama"
+LOCAL2="Deskripsi"
+LOCAL3="Keluar"
+LOCAL4="Manajer Picom"
+LOCAL5="Pengaturan Composite Manager Picom. \n\Matikan composite manager yang lain jika sedang berjalan, sebelum anda memulai Picom. \n\nPilih salah satu"
+LOCAL6="Mulai Picom"
+LOCAL7="Hentikan Picom"
+LOCAL8="Muat file konfigurasi sampel"
+LOCAL9="Edit file konfigurasi Picom"
+LOCAL10="Konfigurasi Picom"
+### .desktop file to be translated too
+# Name[id_ID]=Manajer Picom
+# Comment[id_ID]=Luncurkan, hentikan atau edit Composite Manager Picom
+

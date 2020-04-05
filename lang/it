@@ -1,0 +1,17 @@
+# File di localizzazione italiano per for Sparky Picom.
+# Copyright 2015 Carlo, "malato" Troiani <abbassolafrangetta@gmail.com> 26/10/2015
+# Rilasciato sotto licenza GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nome"
+LOCAL2="Descrizione"
+LOCAL3="Esci"
+LOCAL4="Picom Manager"
+LOCAL5="Impostazioni per Picom Composite Menager. \n\Se stai usando un qualsiasi altro Composite Manager, chiudilo prima di iniziare Picom. \n\nPrego effettua una scelta"
+LOCAL6="Inizia Picom"
+LOCAL7="Ferma Picom"
+LOCAL8="Carica il file di configurazione campione"
+LOCAL9="Modifica il file di configurazione di Picom"
+LOCAL10="Configurazione Picom"
+### .desktop file to be translated too
+# Name[it_IT]=Picom Manager
+# Comment[it_IT]=Lancia, ferma o modifica Picom Composite Manager

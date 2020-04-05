@@ -1,0 +1,17 @@
+# Arquivo de localização para Portugues de Portugal do Sparky Picom.
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Saturday 30 January 23:01:00 WET 2016
+# Sob a Licença GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nome"
+LOCAL2="Descrição"
+LOCAL3="Sair"
+LOCAL4="Gestor do Picom"
+LOCAL5="Definições do Gestor de composição Picom. \n\nPare qualquer gestor de composição diferente, se estiver em execução, antes de iniciar Picom. \n\nPor favor selecione uma opção"
+LOCAL6="Iniciar Picom"
+LOCAL7="Parar Picom"
+LOCAL8="Carregar o Ficheiro exemplo da configuração"
+LOCAL9="Editar Ficheiro de configuração do Picom"
+LOCAL10="Configuração do Picom"
+### Arquivo a ser traduzido também .desktop
+# Name[pt_PT]=Gestor do Picom
+# Comment[pt_PT]=Iniciar, parar ou editar Gestor de Composísão Picom

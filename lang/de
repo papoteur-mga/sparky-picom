@@ -1,0 +1,18 @@
+# German localization file for Sparky Picom.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Under the GNU GPL v2
+# Last update 2020/04/05 by pavroo
+# draft translate -michael<thenumbersguy@o2online.de>2019/12
+LOCAL1="Name"
+LOCAL2="Beschreibung"
+LOCAL3="Beenden"
+LOCAL4="Picom Manager"
+LOCAL5="Picom Composite Manager - Einstellungen. \n\Falls ein anderer Composite Manager läuft, muss er vor dem Start von Picom beendet werden. \n\nBitte eine Option auswählen."
+LOCAL6="Picom starten"
+LOCAL7="Picom stoppen"
+LOCAL8="Konfigurationsdatei laden"
+LOCAL9="Picom-Konfigurationsdatei bearbeiten"
+LOCAL10="Picom-Konfiguration"
+### .desktop file to be translated too
+# Name[de_DE]=Picom Manager
+# Comment[de_DE]=Picom Composite Manager starten, beenden oder editieren

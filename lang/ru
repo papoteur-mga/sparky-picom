@@ -1,0 +1,17 @@
+# Файл русской локализации для Sparky Picom.
+# Copyright 2016 Igor Klyushnyov <inklu@yandex.ru> 2016/04/10
+# Под лицензией GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Имя"
+LOCAL2="Описание"
+LOCAL3="Выйти"
+LOCAL4="Менеджер Picom"
+LOCAL5="Настройки композитного менеджера Picom. \n\Перед запуском Picom остановите другой работающий композитный менеджер. \n\nПожалуйста, выберите один из вариантов"
+LOCAL6="Запустить Picom"
+LOCAL7="Остановить Picom"
+LOCAL8="Загрузить образец конфигурационного файла"
+LOCAL9="Редактировать конфигурационный файл Picom"
+LOCAL10="Настройка Picom"
+### .desktop file to be translated too
+# Name[ru_RU]=Менеджер Picom
+# Comment[ru_RU]=Запуск, завершение или редактирование композитного менеджера Picom

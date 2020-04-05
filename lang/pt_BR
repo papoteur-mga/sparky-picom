@@ -1,0 +1,18 @@
+# Arquivo de localização para Portugues do Brasil para o Sparky Picom.
+# Copyright 2015 Pawel‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Traduzido por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 20/01/2016
+# Sob a Licença GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Nome"
+LOCAL2="Descrição"
+LOCAL3="Sair"
+LOCAL4="Gerenciador do Picom"
+LOCAL5="Gerenciador das Configurações de Composite Picom. \n\Pare se qualquer outro gerenciador de composite diferente estiver em execução, antes de voce inicializar o Picom. \n\nPor gentileza selecione uma opção:"
+LOCAL6="Inicialize o Picom"
+LOCAL7="Pare o Picom"
+LOCAL8="Carregue o arquivo de configuração exemplo do Picom"
+LOCAL9="Edite o arquivo de configuração do Picom"
+LOCAL10="Configuração Picom"
+### .desktop file to be translated too
+# Name[pt_BR]=Gerenciador do Picom
+# Comment[pt_BR]=Inicialize, pare ou edite o gerenciador de Composite Picom

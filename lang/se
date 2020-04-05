@@ -1,0 +1,17 @@
+# Svensk språkfil för Sparky Picom.
+# Copyright 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com> 2015-11-14
+# Under GNU GPL v2
+# Last update 2020/04/05 by pavroo
+LOCAL1="Namn"
+LOCAL2="Beskrivning"
+LOCAL3="Avsluta"
+LOCAL4="Picom-hanteraren"
+LOCAL5="Picom Komposithanterarens inställningar.\nStoppa alla andra komposithanterare som kör innan du startar Picom.\n\nVänligen gör ett val:"
+LOCAL6="Starta Picom"
+LOCAL7="Stoppa Picom"
+LOCAL8="Ladda exempelkonfigurationsfil"
+LOCAL9="Redigera konfigurationsfil för Picom"
+LOCAL10="Picom-konfiguration"
+### .desktop file to be translated too
+# Name[sv_SE]=Picom-hanteraren
+# Comment[sv_SE]=Starta, stoppa eller redigera Picom Komposithanterare

@@ -1,0 +1,18 @@
+# Polish localization file for Sparky Picom.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/26
+# Under the GNU GPL v2
+# Last update 2020/04/05 by pavroo
+# Translated to Polish by pavroo
+LOCAL1="Nazwa"
+LOCAL2="Opis"
+LOCAL3="Zakończ"
+LOCAL4="Menadżer Picom"
+LOCAL5="Ustawienia menadżera kompozycji Picom. \n\Wyłącz inny menadżer kompozycji jeśli jest uruchomiony, zanim uruchomisz Picom. \n\nProszę wybrać opcję"
+LOCAL6="Włącz Picom"
+LOCAL7="Zatrzymaj Picom"
+LOCAL8="Załaduj plik przykładowej konfiguracji"
+LOCAL9="Edytuj plik konfiguracyjny Picom"
+LOCAL10="Konfiguracja Picom"
+### .desktop file, również do przetłumaczenia
+# Name[pl_PL]=Picom Menadżer
+# Comment[pl_PL]=Uruchom, zatrzymaj lub edytuj zarządcę kompozycji Picom
