@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# Created by Paweł "pavroo" Pijanowski 2013/10/12
+# forked from 'sparky-picom' package
+# Copyright 2013-2020 under the GNU GPL2 License
+# This script requires kdialog to run
+# Last update 2021/02/19 by papoteur
+
+# get default's locale file
+DEFLOCDIR="lang"
+if [ "`locale | grep LANG= | grep de`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`locale | grep LANG= | grep el`" != "" ]; then
+. $DEFLOCDIR/el
+elif [ "`locale | grep LANG= | grep es`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`locale | grep LANG= | grep fr`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`locale | grep LANG= | grep hu`" != "" ]; then
+. $DEFLOCDIR/hu
+elif [ "`locale | grep LANG= | grep id_ID`" != "" ]; then
+. $DEFLOCDIR/id_ID
+elif [ "`locale | grep LANG= | grep it`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`locale | grep LANG= | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`locale | grep LANG= | grep pl`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`locale | grep LANG= | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`locale | grep LANG= | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`locale | grep LANG= | grep ru`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`locale | grep LANG= | grep sv_SE`" != "" ]; then
+. $DEFLOCDIR/se
+else
+. $DEFLOCDIR/en
+fi
+
+DIALOG='kdialog --geometry 500x320'
+TITLE="--title "
+TITLETEXT="$LOCAL4"
+
+mainmenu () {
+CHOICES=`$DIALOG $TITLE"$TITLETEXT" --menu "$LOCAL5" Start "$LOCAL6" Stop "$LOCAL7" Load "$LOCAL8" Edit "$LOCAL9" `
+if [ "$?" = "0" ]; then
+	CHOICE=`echo $CHOICES | cut -d "|" -f 1`
+else
+	exit 0
+fi
+
+if [ "$CHOICE" = "Start" ]; then
+	picom &
+	mainmenu
+elif [ "$CHOICE" = "Stop" ]; then
+	killall -9 picom &
+	mainmenu
+elif [ "$CHOICE" = "Load" ]; then
+	if [ -f $HOME/.config/picom/picom.conf ]; then
+		cp $HOME/.config/picom/picom.conf $HOME/.config/picom/picom-backup-$(date +"%m_%d_%Y").conf
+		rm -f $HOME/.config/picom/picom.conf
+	fi
+
+	if [ ! -d $HOME/.config/picom ]; then
+		mkdir $HOME/.config/picom
+	fi
+
+	cp -f /etc/xdg/picom.conf $HOME/.config/picom/picom.conf
+	mainmenu
+elif [ "$CHOICE" = "Edit" ]; then
+	xdg-open $HOME/.config/picom/picom.conf
+	mainmenu
+else
+	exit 0
+fi
+}
+
+mainmenu
