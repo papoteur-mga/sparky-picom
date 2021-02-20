@@ -16,6 +16,7 @@
 
 if [ "$1" = "uninstall" ]; then
 	rm -f /usr/bin/sparky-picom
+	rm -f /usr/bin/qmanage-picom
 	rm -f /usr/share/applications/sparky-picom.desktop
 	rm -f /usr/share/menu/sparky-picom
 	rm -rf /usr/share/sparky/sparky-picom
