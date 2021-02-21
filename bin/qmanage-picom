@@ -7,7 +7,7 @@
 # Last update 2021/02/19 by papoteur
 
 # get default's locale file
-DEFLOCDIR="lang"
+DEFLOCDIR="/usr/share/sparky/sparky-picom/"
 if [ "`locale | grep LANG= | grep de`" != "" ]; then
 . $DEFLOCDIR/de
 elif [ "`locale | grep LANG= | grep el`" != "" ]; then
